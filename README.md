@@ -16,4 +16,3 @@ Is imported:
 ```dart
   JSImport.isImported(source: "asset/app.js");
 ```
-
