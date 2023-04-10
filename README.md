@@ -1,5 +1,5 @@
 # JS Import
-/// Importing JS sources into Flutter Web projects.
+Importing JS sources into Flutter Web projects.
 
 ## Getting Started
 Import:
