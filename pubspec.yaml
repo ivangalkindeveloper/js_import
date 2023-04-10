@@ -1,0 +1,19 @@
+name: js_import
+description: Importing JS libraries and injection JS scripts into Flutter Web projects.
+version: 1.0.0
+repository: https://github.com/ivangalkindeveloper/ellipsized_text
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
