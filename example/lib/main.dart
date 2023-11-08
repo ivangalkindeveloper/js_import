@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 onPressed: () => js_util.callMethod(js_util.globalThis,
                     'alertMessage', ['Flutter is calling upon JavaScript!']),
-                child: Text(
+                child: const Text(
                   "Alert",
                 ),
               ),
