@@ -1,9 +1,9 @@
 name: js_import_example
 description: Demonstrates how to use the js_import plugin.
-publish_to: 'none'
+publish_to: "none"
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: ">=2.19.6 <3.0.0"
 
 dependencies:
   flutter:
@@ -12,11 +12,13 @@ dependencies:
     path: ../
   cupertino_icons: ^1.0.2
   js:
+  example_package_with_js:
+    path: ../example_package_with_js
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  
+
 flutter:
   uses-material-design: true
