@@ -4,5 +4,4 @@
 library js_import;
 
 export 'src/js_import_html.dart'
-    if (dart.library.io) 'src/js_import_io.dart' // dart:io implementation
-    if (dart.library.html) 'src/js_import_html.dart'; // dart:html implementation
+    if (dart.library.io) 'src/js_import_io.dart'; // dart:io implementation
