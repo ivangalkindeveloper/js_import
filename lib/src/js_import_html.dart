@@ -7,6 +7,7 @@ class JSImport {
     String? package,
     bool defer = false,
     bool async = true,
+    String? type,
   }) async {
     source = _packageUrl(source, package);
     if (isImported(source: source)) {
@@ -17,6 +18,7 @@ class JSImport {
       source: source,
       defer: defer,
       async: async,
+      type: type,
     );
     head.appendChild(libraryElement);
     await libraryElement.onLoad.first;
@@ -44,9 +46,10 @@ class JSImport {
     required String source,
     required bool defer,
     required bool async,
+    String? type,
   }) =>
       web.HTMLScriptElement()
-        ..type = "text/javascript"
+        ..type = type ?? "text/javascript"
         ..charset = "utf-8"
         ..defer = async
         ..async = async

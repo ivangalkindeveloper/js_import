@@ -4,6 +4,7 @@ class JSImport {
     String? package,
     bool defer = false,
     bool async = true,
+    String? type,
   }) =>
       throw UnsupportedError(
         "JS import is only possible if the platform supports dart:hmtl!",
