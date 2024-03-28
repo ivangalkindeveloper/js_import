@@ -3,6 +3,5 @@
 
 library js_import;
 
-export 'src/js_import_html.dart'
-    if (dart.library.io) 'src/js_import_io.dart' // dart:io implementation
-    if (dart.library.html) 'src/js_import_html.dart'; // dart:html implementation
+export 'src/js_import_stub.dart'
+    if (dart.library.js_interop) 'src/js_import_html.dart'; // dart:io implementation
